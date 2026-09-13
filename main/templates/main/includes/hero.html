@@ -1,0 +1,28 @@
+{% load static %}
+<section id="hero" class="hero section">
+  <div id="particles-js">
+    <canvas class="particles-js-canvas-el" width="1343" height="630" style="width: 100%; height: 100%;"></canvas>
+  </div>
+  <div class="container zi">
+    <div class="row gy-4">
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <h1 data-aos="fade-up">{{ hero.title }}</h1>
+        <p data-aos="fade-up" data-aos-delay="100">{{ hero.description }}</p>
+        <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
+          <a href="#about" class="btn-get-started">Начать <i class="bi bi-arrow-right"></i></a>              
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+        {% if hero.slides %}
+        <figure class="stack">
+          {% for slide in hero.slides %}
+          <div class="tcard  {% cycle 'one' 'two' 'three' %}">
+            <img src="{% static 'main/img/' %}{{ forloop.counter }}.png" class="img-fluid" alt="">
+          </div>
+          {% endfor %}
+        </figure>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

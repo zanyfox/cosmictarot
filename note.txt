@@ -1,0 +1,22 @@
+python -m venv .venv
+source .venv/bin/activate
+
+pip install django
+
+django-admin startproject cosmictarot
+cd cosmictarot
+(.venv) aleksandr@MacBook-Pro-3 cosmictarot % python manage.py rumserver
+
+(.venv) aleksandr@MacBook-Pro-3 cosmictarot % python manage.py startapp main
+(.venv) aleksandr@MacBook-Pro-3 cosmictarot % python manage.py startapp blog
+(.venv) aleksandr@MacBook-Pro-3 cosmictarot % python manage.py startapp services
+
+(.venv) aleksandr@MacBook-Pro-3 cosmictarot % python manage.py makemigrations
+(.venv) aleksandr@MacBook-Pro-3 cosmictarot % python manage.py migrate
+
+(.venv) aleksandr@MacBook-Pro-3 cosmictarot % python manage.py createsuperuser
+
+login: admin
+password: pic8swpt
+
+pip freeze > requirements.txt

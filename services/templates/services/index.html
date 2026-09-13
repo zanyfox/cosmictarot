@@ -1,0 +1,147 @@
+{% extends 'main/layouts/main.html' %}
+
+{% block title %}About - CosmicTarot Bootstrap Template{% endblock %}
+
+{% block pageclass %}blog-page{% endblock %}
+
+{% block content %}
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p><span>Check Our</span> <span class="description-title">Services</span><br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-rosegold position-relative">
+              <i class="bi bi-filter-square-fill icon"></i>
+              <h3>General Tarot Readings</h3>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              <a href="service-details.html" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-midnightblue position-relative">
+              <i class="bi bi-graph-up-arrow icon"></i>
+              <h3>Career Readings</h3>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              <a href="service-details.html" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-rosegold position-relative">
+              <i class="bi bi-heart-fill icon"></i>
+              <h3>Love & Relationship Readings</h3>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              <a href="service-details.html" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-midnightblue position-relative">
+              <i class="bi bi-person-arms-up icon"></i>
+              <h3>Spiritual & Self-Discovery Readings</h3>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+              <a href="service-details.html" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item item-rosegold position-relative">
+              <i class="bi bi-person-square icon"></i>
+              <h3>Specialized & Thematic Readings</h3>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              <a href="service-details.html" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item item-midnightblue position-relative">
+              <i class="bi bi-currency-exchange icon"></i>
+              <h3>Finance Readings</h3>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              <a href="service-details.html" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="cta" class="cta section">
+
+      <div class="section-bg-2 my-6">
+          
+          <div class="section-bg-overlay"></div>
+
+          <!--begin container-->
+          <div class="container">
+
+              <!--begin row-->
+              <div class="row">
+              
+                  <!--begin col md 7 -->
+                  <div class="col-md-7 mx-auto text-center z9">
+
+                      <h2 class="text-white">Your Answers Are Written in the Stars – Let's Reveal Them!</h2>
+                      <h4 class="text-white">Get a Tarot Reading Now!</h4>
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-white small page-scroll">Book a Reading</a>
+                     
+                  </div>
+                  <!--end col md 7-->
+              
+              </div>
+              <!--end row-->
+      
+          </div>
+          <!--end container-->
+      
+      </div>
+
+    </section> <!-- /Call To Action Section -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Book A Reading</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form action="forms/book.php" method="post" class="php-email-form">
+              <input type="hidden" name="formname" class="form-control" value="modalform">
+            <div class="modal-body">             
+                      <div class="form-group mt-3">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                      </div>
+                      <div class="form-group mt-3">
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                      </div>
+                   
+                    <div class="form-group mt-3">
+                      <input type="text" class="form-control" name="contact" placeholder="Your Contact Number" required>
+                    </div>                          
+                  
+            </div>
+            <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="custom-button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+{% endblock %}
