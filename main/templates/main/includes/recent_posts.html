@@ -1,0 +1,42 @@
+{% load static %}
+<section id="recent-posts" class="recent-posts section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 title="Latest Posts">Последние статьи</h2>
+    <p title="Latest Posts From Our Blog"><span>Последние статьи из</span> <span class="description-title">нашего блога</span></p>
+  </div><!-- End Section Title -->
+
+  {% if recent_posts %}
+  <div class="container">
+    <div class="row gy-5">
+      {% for post in recent_posts %}
+      <div class="col-xl-4 col-md-6">
+        <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-img position-relative overflow-hidden">
+            <img src="{% static 'main/img/' %}blog-1.jpg" class="img-fluid" alt="">
+            <span class="post-date">{{ post.date|date:"F d" }}</span>
+          </div>
+          <div class="post-content d-flex flex-column">
+            <h3 class="post-title"><a href="/blog/{{ post.id }}">{{ post.title }}</a></h3>
+            <div class="meta d-flex align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-person"></i> <span class="ps-2">{{ post.author }}</span>
+              </div>
+              <span class="px-3 text-black-50">/</span>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-folder2"></i> <span class="ps-2">Astrology</span>
+              </div>
+            </div>
+            <hr>
+            <a href="/blog/{{ post.id }}" class="readmore stretched-link" title="Read More">
+              <span>Читать далее</span><i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div><!-- End post item -->
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</section>

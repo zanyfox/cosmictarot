@@ -1,0 +1,10 @@
+<div class="service-box">
+  <h4 title="Services List">Список услуг</h4>
+  {% if services %}
+  <div class="services-list">
+    {% for s in services %}
+    <a href="/services/{{ s.slug }}" {% if s.slug == service.slug %}class="active"{% endif %}><i class="bi bi-moon-stars-fill"></i><span>{{ s.name }}</span></a>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

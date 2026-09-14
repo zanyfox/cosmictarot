@@ -1,0 +1,99 @@
+{% load static %}
+<section id="testimonials" class="testimonials section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 title="Testimonials">Отзывы</h2>
+    <p title="What Our Clients Says"><span>Что говорят</span> <span class="description-title">наши клиенты</span><br></p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 40
+            },
+            "1200": {
+              "slidesPerView": 3,
+              "spaceBetween": 1
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>Обратилась с запросом по отношениям. Была в полной растерянности... Таролог не стал пугать, а спокойно разложил ситуацию по картам, показала, где я закрываю глаза, а где есть шанс. Через месяц всё начало меняться. Очень бережный и честный подход. Спасибо!</p>
+            <div class="profile mt-auto">
+              <img src="{% static 'main/img/' %}testimonials-2.jpg" class="testimonial-img" alt="">
+              <h3>Екатерина, 34 года, Москва</h3>          
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>Скептически относился к Таро, но решил попробовать по работе. Консультация онлайн, всё чётко. Мне показали вероятные сценарии и риски, дали конкретные шаги. Не было никакой мистики ради мистики — просто глубокий разбор. Рекомендую тем, кто сомневается.</p>
+            <div class="profile mt-auto">
+              <img src="{% static 'main/img/' %}testimonials-1.jpg" class="testimonial-img" alt="">
+              <h3>Дмитрий, 29 лет, Санкт-Петербург</h3>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>Это была не просто консультация, а разговор с человеком, который тебя слышит. Я пришла с тревогой и кучей вопросов. Мы разобрали каждую карту, и я ушла с ясной картиной, что делать дальше. Никакого осуждения, только поддержка и мудрость. Обязательно вернусь ещё.</p>
+            <div class="profile mt-auto">
+              <img src="{% static 'main/img/' %}testimonials-3.jpg" class="testimonial-img" alt="">
+              <h3>Марина, 41 год, Казань</h3>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>Заказывал расклад на год. Понравилось, что без фатализма: показали, на что обратить внимание, где подстелить соломку. Некоторые события действительно произошли в указанные сроки. Отдельное спасибо за запись консультации — пересматриваю и нахожу новые смыслы.</p>
+            <div class="profile mt-auto">
+              <img src="{% static 'main/img/' %}testimonials-4.jpg" class="testimonial-img" alt="">
+              <h3>Алексей, 37 лет, Екатеринбург</h3>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+      
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section>

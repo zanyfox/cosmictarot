@@ -1,0 +1,27 @@
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 title="Services">Услуги</h2>
+    <p title="Check Our Services"><span>Проверьте наши</span> <span class="description-title">услуги</span><br></p>
+  </div><!-- End Section Title -->
+
+  {% if services %}
+  <div class="container">
+    <div class="row gy-4">
+      {% for service in services %}
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item item-rosegold position-relative">
+          <i class="bi bi-{{ service.icon }} icon"></i>
+          <h3>{{ service.name }}</h3>
+          <p>{{ service.excerpt }}</p>
+          <a href="/services/{{ service.slug }}" class="read-more stretched-link" title="Read More">
+            <span>Читать далее</span> <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div><!-- End Service Item -->
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</section>

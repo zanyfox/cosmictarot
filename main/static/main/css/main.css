@@ -1,8 +1,17 @@
 /* Fonts */
 :root {
   --default-font: "Mulish", serif,  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Outfit", serif;
+  --heading-font: "Manrope", serif;
   --nav-font: "Mulish", serif;
+}
+
+@font-face {
+  font-family: 'Sacramento';
+  src: url('fonts/Sacramento-Regular.woff2') format('woff2'),
+      url('fonts/Sacramento-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */

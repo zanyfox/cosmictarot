@@ -1,0 +1,25 @@
+{% extends 'main/layouts/main.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block pageclass %}blog-page{% endblock %}
+
+{% block content %}
+  <section id="service-details" class="service-details section">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
+          {% load static %}
+          <img src="{% static 'main/assets/img/' %}services.jpg" alt="" class="img-fluid services-img">
+          <h3>{{ service.name }}</h3>
+          {{ service.body | safe }}
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          {% include 'services/includes/services_list.html' %}
+          {% include 'services/includes/help.html' %}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% include 'main/includes/cta.html' %}
+{% endblock %}
